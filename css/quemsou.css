@@ -1,0 +1,17 @@
+h1 {
+    color: cadetblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h5 {
+    color: rgb(126, 121, 121);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h6 {
+    color: rgb(126, 121, 121);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}

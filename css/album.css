@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding: 0px;
+}
+
+.mt-n1 {
+    margin-top: -0.25rem !important;
+}
+
+
+/*filtro*/
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    width: 780px;
+    height: auto;
+    margin: 0px;
+}
+
+#galeria img {
+    float: left;
+    align-items: center;
+    width: 250px;
+    padding: 5px;
+    transition: all 0.4s;
+}
+
+#galeria {
+    height: 0px;
+    position: relative;
+    display: block;
+    margin: 0%;
+}
+
+label {
+    width: 175px;
+    padding: 20px 10px;
+    display: block;
+    float: left;
+    background-color: white;
+    color: cadetblue;
+    font-family: 'Verdana';
+    text-align: center;
+    cursor: pointer;
+}
+
+input:checked+label {
+    background: rgb(236, 239, 240);
+}
+
+input {
+    display: none;
+}
+
+#bt_externo:checked~#galeria .paisagens,
+#bt_externo:checked~#galeria .maquiagens {
+    opacity: .4;
+    transform: scale(0.5)
+}
+
+#bt_paisagens:checked~#galeria .externo,
+#bt_paisagens:checked~#galeria .maquiagens {
+    opacity: .4;
+    transform: scale(0.5);
+}
+
+#bt_maquiagens:checked~#galeria .externo,
+#bt_maquiagens:checked~#galeria .paisagens {
+    opacity: .4;
+    transform: scale(0.5);
+}
+
+
+/*fim do filtro*/
+
+
+/*expansão da imagem*/
+
+.Ibox {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.Ibox:target {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(10, 10, 10, .7);
+    position: fixed;
+}
+
+.box_img {
+    list-style: none;
+    display: flex;
+    margin: 80px auto;
+    width: 780px;
+    height: auto;
+}
+
+.Ibox img {
+    align-items: center;
+    width: 800px;
+    height: auto;
+    padding: auto;
+    margin: 75px auto;
+}
+
+.btn {
+    color: blue;
+    font-family: sans-serif;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+#prev {
+    left: 5%;
+    top: 45%;
+}
+
+#next {
+    right: 5%;
+    top: 45%;
+}
+
+#close {
+    top: 0;
+    right: 2%;
+}
+
+.box_img img {
+    opacity: 0;
+}
+
+.Ibox:target .box_img img {
+    opacity: 1;
+    transition opacity: .4% linear;
+}
+
+
+/*fim da expansão da imagem*/
