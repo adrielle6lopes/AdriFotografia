@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/footer_sociais.css">
+    <script type="text/javascript" src="js/agendamento.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <title>Fale comigo</title>
+
+</head>
+
+<body>
+
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(95, 134, 128)">
+        <a class="navbar-brand" href="index.html">Adri Lopes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="album.html">Álbum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento.html">Fale Comigo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quemsou.html">Quem Sou</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Fim do menu-->
+    <br>
+
+
+
+    <!--Grid-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
+                <form onsubmit="return valida" name=form>
+
+                    <label for="inputZip">Seu nome</label>
+                    <input type="text" class="form-control" name="nome">
+
+                    <label for="inputZip">Email</label>
+                    <input type="email" class="form-control" name="email">
+
+                    <label for="inputZip">Telefone</label>
+                    <input type="tel" class="form-control" name="telefone" placeholder="xxxxxxxxx">
+                    <label for="exampleFormControlTextarea1">Escreva uma mensagem:</label>
+                    <textarea class="form-control" rows="3" name="mensagem"></textarea><br>
+
+                    <button type="button" onclick="valida()" class="btn btn-outline-info">Enviar</button>
+                </form>
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+    </div>
+    <!--Fim do grid-->
+
+    <!--Footer-->
+    <footer id="myFooter">
+        <div class="container">
+        </div>
+        <div class="footer-social">
+            <!--  <a href="#" class="social-icons">
+                <i class="fa fa-facebook"></i></a>-->
+            <a href="https://www.instagram.com/aadri_fotografia/?hl=pt-br" class="social-icons">
+                <i class="fa fa-instagram"></i></a>
+            <!-- <a href="#" class="social-icons">
+                    <i class="fa fa-twitter"></i></a>-->
+        </div>
+    </footer>
+    <!--Fim do Footer-->
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
